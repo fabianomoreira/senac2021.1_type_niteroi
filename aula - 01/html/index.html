@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brainstorm</title>
+
+    <script>
+        function executar(){
+            var n1 = document.getElementById('n1').value;
+            var n2 = document.getElementById('n2').value;
+            var n3 = document.getElementById('n3').value;
+
+            var total = multiplicar(parseInt(n1), parseInt(n2), parseInt(n3));
+
+            alert(total);
+        }
+    </script>
+</head>
+<body>
+    <label>Numero 1:</label>
+    <input type="text" id="n1" name="n1"><br>
+    <label>Numero 2:</label>
+    <input type="text" id="n2" name="n2"><br>
+    <label>Numero 3:</label>
+    <input type="text" id="n3" name="n3"><br>
+    <button onclick="executar()">Ação!!</button>
+
+    <script src="../dist/multiplica.js"></script>
+</body>
+</html>
