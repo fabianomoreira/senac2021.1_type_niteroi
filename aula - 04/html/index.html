@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megasena</title>
+
+    <style>
+        #titulo{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 46px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #quadro, #funcao{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .numero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80px;
+            height: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            background-color: lightgreen;
+            margin: 12px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div id = "titulo">
+        <div>MEGA SENA</div>
+    </div>
+    <div id = "quadro">
+        <div id="n1" class="numero"></div>
+        <div id="n2" class="numero"></div>
+        <div id="n3" class="numero"></div>
+        <div id="n4" class="numero"></div>
+        <div id="n5" class="numero"></div>
+        <div id="n6" class="numero"></div>
+    </div>
+    <div id = "funcao">
+        <a href="index.html"><button>Sorteio</button></a>
+    </div>
+
+    <script src="../dist/megasena.js"></script>
+    <script>
+       var n = sortear(); 
+
+       document.getElementById("n1").innerHTML = n[0];
+       document.getElementById("n2").innerHTML = n[1];
+       document.getElementById("n3").innerHTML = n[2];
+       document.getElementById("n4").innerHTML = n[3];
+       document.getElementById("n5").innerHTML = n[4];
+       document.getElementById("n6").innerHTML = n[5];
+    </script>
+</body>
+</html>
