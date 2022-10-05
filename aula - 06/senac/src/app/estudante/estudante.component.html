@@ -1,0 +1,12 @@
+<div *ngIf="!estudante.aprovado">
+    {{estudante.nome}}
+</div>
+<div *ngIf="estudante.aprovado">
+    {{estudante.nome}}
+</div>
+<div *ngIf="estudante.aprovado" [class.light] = "estudante.aprovado">
+    O aluno está APROVADO!
+</div>
+<div *ngIf="!estudante.aprovado" [class.red] = "!estudante.aprovado">
+    O aluno está REPROVADO!
+</div>
