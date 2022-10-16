@@ -6,7 +6,7 @@
 <main role="main" class="flex-shrink-0">
   <div class="container">
     <div class="card-deck mb-3 text-center">
-      <div *ngFor="let categoria of categorias">
+      <div *ngFor="let categoria of categorias" class="card mb-4 shadow-sm">
         <cin-categoria [categoria]="categoria"></cin-categoria>
       </div>
     </div>
