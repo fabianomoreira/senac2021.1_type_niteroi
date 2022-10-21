@@ -20,5 +20,35 @@
             "titulo": "Heróis",
             "imagePath": "../../assets/images/superhero.png"
         }
+    ],
+    "filmes": [
+        {
+            "id": 1,
+            "descricao": "Rogai por nós",
+            "duracao": "1h 39m",
+            "ano": "2021",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/rogai.jpg",
+            "categoriaId": 1
+        },
+        {
+            "id": 2,
+            "descricao": "Vingadores. Ultimato!",
+            "duracao": "3h 10m",
+            "ano": "2019",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/vingadores.jpg",
+            "categoriaId": 5
+        },
+        {
+            "id": 3,
+            "descricao": "O Homem Invísivel",
+            "duracao": "2h 10m",
+            "ano": "2020",
+            "indicacao": "14 anos",
+            "imagePath": "../../assets/images/movies/invisivel.jpg",
+            "categoriaId": 1
+        }
+
     ]
 }
