@@ -8,12 +8,22 @@ import { CategoriasService } from './categorias.service';
 })
 export class CategoriasComponent implements OnInit {
   categorias!: Categoria[];
+  categoria!: Categoria;
 
   constructor(private categoriaService: CategoriasService) { }
 
   ngOnInit(): void {
     this.categoriaService.listarCategorias()
                          .subscribe(categorias => this.categorias = categorias);
+  }
+
+  incluirCategoria(){
+    console.log('Incluir...');
+
+    this.categoria = {titulo: 'Terror', imagePath: '../../assets/images/dracula.png'};
+
+    this.categoriaService.incluirCategoria(this.categoria)
+                         .subscribe(categoria => this.categoria);
   }
 
 }

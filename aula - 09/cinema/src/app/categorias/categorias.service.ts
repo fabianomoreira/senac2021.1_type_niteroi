@@ -12,7 +12,12 @@ export class CategoriasService {
     constructor(private http: HttpClient){}
 
     listarCategorias(): Observable<Categoria[]>{
-        return this.http.get<Categoria[]>(`${CINEMA_API}/categorias`)
+        return this.http.get<Categoria[]>(`${CINEMA_API}/appREST/webapi/myresource/categorias`)
+                        .pipe(catchError(ErrorHandler.handleError));
+    }
+
+    incluirCategoria(categoria: Categoria): Observable<Categoria>{
+        return this.http.post<Categoria>(`${CINEMA_API}/appREST/webapi/myresource/incluir`, categoria)
                         .pipe(catchError(ErrorHandler.handleError));
     }
 }
